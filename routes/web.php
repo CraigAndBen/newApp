@@ -49,3 +49,4 @@ Route::middleware(['auth', 'role:agent'])->group(function(){
 
 });
 
+Route::get('/admin/login', [AdminController::class, 'AdminLogin'])->name('admin.login');
